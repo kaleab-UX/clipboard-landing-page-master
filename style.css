@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+p{
+    font-size: 1.1rem;
+}
+img{
+    max-width: 100%;
+}
+main{
+    max-width: 100%;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+}
+.home .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home .container img{
+    width: 120px;
+    margin-bottom: 26px;
+}
+.home .container h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--Dark-Grayish-Blue);
+}
+.home .container p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    max-width:70% ;
+}
+.home .container .cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.home .container .cta a{
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    text-decoration: none !important;
+    transition: background-color 0.6s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+    margin: 10px;
+}
+.home .container .btn1{
+    background-color: var(--Strong-Cyan);
+}
+.home .container .btn2{
+    background-color: var(--Light-Blue);
+}
+
+.home .container .cta a:hover{
+    background-color: var(--Dark-Grayish-Blue);
+}
+
+/*----------service------*/
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.service .container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .container h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+.service .container p{
+    text-align: center;
+    width: 52%;
+    color: var(--Grayish-Blue);
+}
+.service .container .detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+.service .container .detail img{
+    max-width: 50%;
+    object-position: -30px 10%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    object-fit: contain;
+}
+.service .container .detail .service-detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.service .container .detail .service-detail .row{
+    margin-bottom: 36px;
+}
+.service .container .detail .service-detail .row p{
+    text-align: left;
+    margin-top: 6px;
+}
+
+/*----------access------*/
+
+
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.access .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.access .container h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+
+.access .container p{
+    text-align: center;
+    width: 70%;
+    color: var(--Grayish-Blue);
+    margin-bottom: 65px;
+}
+.service .container img{
+    width: calc(100% - 40px);
+}
+
+/*--------futears---------*/
+
+.futears{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.futears .container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.futears .container h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+.futears .container p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+.futears .container .futears-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+    gap: 26px;
+    margin-top: 60px;
+}
+
+.futears .container .futears-content .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.futears .container .futears-content .col img{
+    margin-bottom: 20px;
+}
+.futears .container .futears-content .col h3{
+    font-size: 1.8rem;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+.futears .container .futears-content .col p{
+    line-height: 28px;
+    color: var(--Grayish-Blue);
+}
+.futears .container .futears-version{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 80px 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    object-fit: contain;
+}
+
+.futears .container .futears-version img{
+    width: 140px;
+    grid-row: 1 / 6;
+}
+
+/*----download-----*/
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.download .container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download .container h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+.download .container p{
+    text-align: center;
+    max-width: 70%;
+    color: var(--Grayish-Blue);
+    margin-bottom: 65px;
+}
+
+.download .container .download-btn a{
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    text-decoration: none !important;
+    transition: background-color 0.6s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+    margin: 10px;
+}
+
+.download .container .btn1{
+    background-color: var(--Strong-Cyan);
+}
+
+.download .container .btn2{
+    background-color: var(--Light-Blue);
+}
+
+.download .container .download-btn a:hover{
+    background-color: var(--Dark-Grayish-Blue);
+}
+/*-----footer-----*/
+
+.footer{
+    width: 100%;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #ccc;
+}
+.footer .container .attribution img{
+    width: 70px;
+}
+.footer .container .privacy ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+}
+.footer .container .privacy ul li{
+    list-style: none !important;
+}
+.footer .container .privacy ul li a{
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+}
+.footer .container .social-media a{
+    margin-right: 16px;
+}
+
+/*----responsive design----*/
+

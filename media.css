@@ -1,0 +1,104 @@
+@media only screen and (max-width: 768px) {
+    /*-----HOME-------*/
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .home{
+        height: 80vh;
+        width: 100%;
+        padding-top: 100px;
+    }
+    .home .container img{
+        margin-bottom: 56px;
+    }
+    .home .container h1{
+        font-size: 1.6rem;
+    }
+    .home .container p{
+        max-width:100% ;
+    }
+    .home .container .cta{
+        flex-direction: column;
+    }
+    .home .container .cta a{
+        padding: 12px 50px;
+        font-size: 0.95rem;
+    }
+    /*----------service------*/
+    .service .container p{
+        width: 100%;
+    }
+    .service .container .detail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service .container .detail img{
+        max-width: 100%;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
+    .service .container .detail .service-detail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .service .container .detail .service-detail .row{
+        margin-bottom: 36px;
+    }
+    .service .container .detail .service-detail .row p, h2{
+        text-align: center;
+        margin-top: 6px;
+    }
+
+
+    /*------feature---*/
+
+    .futears .container .futears-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .futears .container .futears-version{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .futears .container .futears-version img{
+        margin-bottom: 60px;
+    }
+    .download .container .download-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .download .container .download-btn a{
+        padding: 12px 50px;
+        font-size: 0.95rem;
+    }
+    .footer .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer .container .privacy ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .footer .container .privacy ul li{
+        margin-bottom: 20px;
+    }
+    .footer .container .social-media a{
+        margin-right: 32px;
+    }
+}
